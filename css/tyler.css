@@ -1,0 +1,103 @@
+/* Tyler's personal page (tyler.html) */
+#pp{display:block}
+.ppcard .pt{position:relative;min-height:470px;background:radial-gradient(circle at 50% 30%,#4b2450,#1b0f22 72%);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.ppcard .gridbg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);background-size:26px 26px;-webkit-mask-image:radial-gradient(circle at 50% 45%,#000 28%,transparent 80%);mask-image:radial-gradient(circle at 50% 45%,#000 28%,transparent 80%)}
+.ppcard .pt svg{position:relative;width:68%;height:auto;fill:#d9bfd0;opacity:.92;filter:drop-shadow(0 0 28px rgba(233,182,217,.4));margin-top:-14px}
+.ppcard .cnr{position:absolute;width:22px;height:22px;border:0 solid rgba(233,182,217,.55)}
+.ppcard .cnr.a{left:14px;top:14px;border-width:2px 0 0 2px;border-radius:6px 0 0 0}
+.ppcard .cnr.b{right:14px;top:14px;border-width:2px 2px 0 0;border-radius:0 6px 0 0}
+.ppcard .cnr.c{left:14px;bottom:14px;border-width:0 0 2px 2px;border-radius:0 0 0 6px}
+.ppcard .cnr.d{right:14px;bottom:14px;border-width:0 2px 2px 0;border-radius:0 0 6px 0}
+.ppcard .tg{position:absolute;top:28px;font:600 10px Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#e9b6d9}
+.ppcard .tg.l{left:30px}
+.ppcard .tg.r{right:30px;display:flex;align-items:center;gap:7px}
+.ppcard .tg u{width:6px;height:6px;border-radius:50%;background:#f2a02a;animation:dpulse 1.9s infinite}
+.ppcard .scanl{position:absolute;left:0;right:0;top:8%;height:2px;background:linear-gradient(90deg,transparent,#e9b6d9,transparent);box-shadow:0 0 18px 6px rgba(233,182,217,.3);animation:scanv 3.4s ease-in-out infinite alternate}
+.ppcard .ptf{position:absolute;left:30px;right:30px;bottom:30px;display:flex;align-items:center;justify-content:space-between}
+.ppcard .bc{width:92px;height:26px;background:repeating-linear-gradient(90deg,#d9bfd0 0 2px,transparent 2px 4px,#d9bfd0 4px 5px,transparent 5px 8px,#d9bfd0 8px 11px,transparent 11px 13px);opacity:.5}
+.ppcard .ptf em{font:600 10px Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#b4869f;font-style:normal}
+.ppcard .hd{position:relative;direction:rtl;text-align:right}
+.ppcard .kk{display:block;font:600 10.5px Inter,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--red)}
+.ppcard .big{position:absolute;left:0;top:-14px;font:400 78px/1 'DM Serif Display',Georgia,serif;color:transparent;-webkit-text-stroke:1.5px rgba(110,44,94,.3)}
+.ppcard .info{display:flex;flex-direction:column;gap:10px;margin:0;direction:rtl}
+.ppcard .info>div{display:flex;align-items:center;gap:14px;padding:13px 16px;border-radius:16px;background:linear-gradient(135deg,#fbf1f6,#f7eaf2);border:1px solid #f1dce8;transition:transform .25s,border-color .25s}
+.ppcard .info>div:hover{transform:translateX(-4px);border-color:#d9bccd}
+.ppcard .ico{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:#fff;box-shadow:0 6px 14px -8px rgba(110,44,94,.5);flex:none}
+.ppcard .ico svg{width:22px;height:22px;fill:none;stroke:var(--red);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ppcard .ft{min-width:0}
+.ppcard dt{margin:0 0 2px;font-size:12px;color:var(--mute)}
+.ppcard dd{margin:0;font-size:16px;font-weight:600;color:var(--ink)}
+#pp{max-width:1280px;margin:0 auto;padding:96px 28px 90px;position:relative;z-index:1}
+#pp{display:block;animation:ppin .8s cubic-bezier(.2,.8,.2,1)}
+.ppx{position:fixed;top:14px;left:16px;z-index:60;border:1px solid rgba(255,255,255,.85);background:rgba(255,255,255,.62);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);color:var(--red);padding:9px 18px;border-radius:99px;font:600 12px Inter,sans-serif;letter-spacing:.06em;cursor:pointer;box-shadow:0 10px 24px -12px rgba(60,10,45,.45)}
+.pph{text-align:center;margin-bottom:38px}
+.ppk{display:block;font:600 11px Inter,sans-serif;letter-spacing:.34em;text-transform:uppercase;color:var(--red)}
+.pph h1{margin:10px 0 10px;font:400 clamp(60px,10vw,132px)/1 'DM Serif Display',Georgia,serif;color:var(--ink)}
+.pph p{margin:0;font:500 14px Inter,sans-serif;color:var(--mute)}
+.ppcard{display:grid;grid-template-columns:300px minmax(0,1fr);border-radius:28px;overflow:hidden;background:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.8);direction:ltr;font-family:Inter,'B Roya',Cairo,sans-serif;box-shadow:inset 0 1px 0 #fff}
+.ppcard .ppsil{display:contents}
+.ppcard .pi2{padding:38px 38px 32px}
+.ppcard .hd{direction:ltr;text-align:left}
+.ppcard .big{left:auto;right:0}
+.ppcard h3{font:400 44px/1.1 'DM Serif Display',Georgia,serif}
+.ppcard .info{direction:ltr}
+.ppcard .info>div:hover{transform:translateX(4px)}
+.ppcard .tg u{background:#3dbb7a;animation:none}
+.rd{border-radius:24px;border:1px solid rgba(255,255,255,.85);background:linear-gradient(145deg,rgba(255,255,255,.62),rgba(255,255,255,.26));padding:28px 32px;box-shadow:inset 0 1px 0 #fff}
+.rdh{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:16px}
+.rdt{height:230px;overflow-y:auto;overscroll-behavior:contain;padding-inline-end:12px;scrollbar-width:thin;scrollbar-color:rgba(110,44,94,.4) transparent;font:400 18px/1.95 Inter,'B Roya',Cairo,sans-serif;color:var(--ink);white-space:pre-wrap}
+.rdt::-webkit-scrollbar{width:6px}
+.rdt::-webkit-scrollbar-thumb{background:rgba(110,44,94,.35);border-radius:6px}
+.rdt::-webkit-scrollbar-track{background:transparent}
+.rdt.more{-webkit-mask-image:linear-gradient(#000 calc(100% - 36px),transparent);mask-image:linear-gradient(#000 calc(100% - 36px),transparent)}
+@media(max-width:760px){.rdt{height:210px;font-size:16.5px}}
+.rdt.typing:after{content:"";display:inline-block;width:2px;height:1.1em;margin-inline-start:3px;vertical-align:text-bottom;background:var(--red);animation:rdblink 1s steps(1) infinite}
+.rdt.sr{animation:rdr .5s cubic-bezier(.2,.8,.2,1)}
+.rdt.sl{animation:rdl .5s cubic-bezier(.2,.8,.2,1)}
+.rdn{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.9)}
+.rdp{border:0;background:transparent;color:var(--red);font:600 12px Inter,sans-serif;letter-spacing:.08em;cursor:pointer;padding:8px 4px}
+.rdp:disabled{opacity:.35;cursor:default}
+.rdots{display:flex;gap:6px}
+.rdots i{width:7px;height:7px;border-radius:7px;background:#e2cdd9;transition:width .3s,background .3s}
+.rdots i.on{width:22px;background:var(--red)}
+@media(max-width:760px){
+#pp{padding:84px 14px 70px}
+.ppcard{grid-template-columns:1fr}
+.ppcard .pt{min-height:230px}
+.ppcard .pt svg{width:34%}
+.ppcard .pi2{padding:26px 22px}
+.rd{padding:22px 20px}
+}
+.ppcard dd.lst span{display:block;position:relative;padding-inline-start:18px;font-size:15px;font-weight:600;line-height:1.9}
+.ppcard dd.lst span:before{content:"";position:absolute;inset-inline-start:0;top:.85em;width:7px;height:7px;border-radius:50%;background:var(--red)}
+.ppcard .ft{flex:1}
+.ppcard dd{text-align:left}
+.ppcard dd.lst span{display:block;position:relative;padding:0 0 0 18px;text-align:left}
+.ppcard dd.lst span:before{inset-inline-start:auto;left:0}
+.ppcard .hd{direction:rtl;text-align:right}
+.ppcard .big{left:0;right:auto}
+.ppcard .info{direction:rtl}
+.ppcard .info>div:hover{transform:translateX(-4px)}
+.ppcard dt,.ppcard dd{text-align:right}
+.ppcard dd.lst span{padding:0 18px 0 0;text-align:right}
+.ppcard dd.lst span:before{left:auto;right:0}
+@media(min-width:761px){
+.ppcard{grid-template-columns:minmax(0,1fr) 340px;gap:34px;align-items:center;background:none;border:0;box-shadow:none;border-radius:0;overflow:visible}
+.ppcard .pi2{grid-column:1;grid-row:1;padding:6px 0}
+.ppcard .pt{grid-column:2;grid-row:1;min-height:0;height:340px;border-radius:30px;box-shadow:0 34px 56px -30px rgba(40,5,30,.7)}
+.ppcard .pt svg{width:56%}
+}
+@media(min-width:761px){
+.ppcard{grid-template-columns:minmax(0,1fr) 330px;gap:28px;align-items:stretch;background:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.9);box-shadow:inset 0 1px 0 #fff,0 30px 50px -34px rgba(86,22,72,.4);border-radius:32px;padding:24px;overflow:hidden}
+.ppcard .pi2{padding:6px 4px 4px;justify-content:space-between}
+.ppcard .pt{height:auto;min-height:420px;border-radius:24px;box-shadow:0 24px 40px -26px rgba(40,5,30,.7)}
+.ppcard .pt svg{width:54%}
+.ppcard .info{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ppcard .info>div:last-child{grid-column:1/-1}
+}
+.ppcard .pt {
+  background-image: url("../images/Tyler.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
